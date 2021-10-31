@@ -38,7 +38,7 @@
 prompt: .asciiz ">>> "			# expression input prompt
 valid: .asciiz "Valid input\n"		# valid expression response
 invalid: .asciiz "Invalid input\n"	# invalid expression response
-input_buffer: .space READ_LEN		# reserve data segment of 64 bytes + null to store user input
+input_buffer: .space 67		# reserve data segment of 64 bytes + null to store user input
 values: .space VALUES_SIZE
 operators: .space OPERATORS_SIZE
 fp_positive: .float +1.0
@@ -68,19 +68,6 @@ main:
 	
 	# if input is empty, it is valid
 	beq $v0, $zero, print_valid	# $v0 has strlen after remove_newline()
-	
-	# function: str_to_float
-	la $a0, input_buffer
-	li $a1, 0
-	move $a2, $v0
-	subi $a2, $a2, 1
-	jal str_to_float
-	mtc1 $v0, $f12
-	li $v0, SYS_PRINT_FLOAT
-	syscall
-	la $a0, nl			# load address of input string for syscall
-	li $v0, SYS_PRINT_STRING	# load system call code
-	syscall
 	
 	# if there are any disallowed symbols, it is invalid
 	la $a0, input_buffer
@@ -112,7 +99,15 @@ main:
 	li $v0, SYS_PRINT_STRING	# load system call code
 	syscall
 	# evaluate expression
+	la $a0, input_buffer
 	jal eval
+	# print result
+	mtc1 $v0, $f12
+	li $v0, SYS_PRINT_FLOAT
+	syscall
+	la $a0, nl
+	li $v0, SYS_PRINT_STRING
+	syscall
 	b main
 	
 	# print Invalid input then repeat REPL
@@ -445,8 +440,8 @@ eval:
 	
 	# initialize str indexes
 	li $t3, 0	# $t3 - int str index
-	move $t4, $t1	# $t4 - int current value start index
-	move $t5, $t1	# $t5 - int current value end index
+	move $t4, $t3	# $t4 - int current value start index
+	move $t5, $t3	# $t5 - int current value end index
 	
 	# initialize values pointer and index
 	la $s0, values	# $s0 - float *values (variable) &values[i+1]
@@ -460,8 +455,8 @@ eval:
 	# loop over value in str
 	eval_value:
 	# read current and next char
-	la $t1, 0($t0)						# $t1 - char str[i]
-	la $t2, 1($t0)						# $t2 - char str[i+1]
+	lb $t1, 0($t0)						# $t1 - char str[i]
+	lb $t2, 1($t0)						# $t2 - char str[i+1]
 	# if sign, check for open parenthesis
 	beq $t1, 43, eval_check_next_open			# '+'
 	beq $t1, 45, eval_check_next_open			# '-'
@@ -501,7 +496,7 @@ eval:
 	addi $s0, $s0, 1	# increment values pointer
 	addi $s2, $s2, 1	# increment values index
 	li $s4, 42		# store '*' at operators[i]
-	sw $s4, 0($s3)		# store '*' at operators[i]
+	sb $s4, 0($s3)		# store '*' at operators[i]
 	addi $s3, $s3, 1	# increment operators pointer
 	addi $s5, $s5, 1	# increment operators index
 	# move to next character
@@ -540,11 +535,11 @@ eval:
 	# expects str[i] == '(' and registers $t0,$t3 to be set
 	eval_read_open:
 	# read current and next char
-	la $t1, 0($t0)		# $t1 - char str[i]
-	la $t2, 1($t0)		# $t2 - char str[i+1]
+	lb $t1, 0($t0)		# $t1 - char str[i]
+	lb $t2, 1($t0)		# $t2 - char str[i+1]
 	# store open parenthesis in operators stack
 	move $s4, $t1		# store '(' at operators[i]
-	sw $s4, 0($s3)		# store '(' at operators[i]
+	sb $s4, 0($s3)		# store '(' at operators[i]
 	addi $s3, $s3, 1	# increment operators pointer
 	addi $s5, $s5, 1	# increment operators index
 	# move to next character
@@ -559,8 +554,8 @@ eval:
 	# calculate value between parenthesis until open parenthesis reached in operator stack
 	eval_read_close:
 	# read current and next char
-	la $t1, 0($t0)		# $t1 - char str[i]
-	la $t2, 1($t0)		# $t2 - char str[i+1]
+	lb $t1, 0($t0)		# $t1 - char str[i]
+	lb $t2, 1($t0)		# $t2 - char str[i+1]
 	# check if '(' is at top of operator stack
 	beq $t1, 40, eval_read_close_open_found
 	# load operator and two operands for execution
@@ -597,8 +592,8 @@ eval:
 	# process current operator and check operator precedence
 	eval_read_operator:
 	# read current and next char
-	la $t1, 0($t0)		# $t1 - char str[i]
-	la $t2, 1($t0)		# $t2 - char str[i+1]
+	lb $t1, 0($t0)		# $t1 - char str[i]
+	lb $t2, 1($t0)		# $t2 - char str[i+1]
 	# check if operator on stack has same or greater precedence as current operator
 	# if operator stack is empty, save operator and continue
 	# if * or / is on stack, perform an operation
@@ -739,6 +734,8 @@ execute_operation:
 #   $v0 - float result
 #
 str_to_float:
+	# push $t0-$t3 to stack
+
 	l.s $f0, fp_positive	# $f0 - float sign
 	li $t0, 0		# $t0 - int value
 	l.s $f2, fp_positive	# $f2 - float +1
@@ -806,6 +803,8 @@ str_to_float:
 	cvt.s.w $f1, $f1	# convert word in $f1 to float
 	mul.s $f1, $f1, $f0	# multiply value by sign and store in $f1
 	mfc1 $v0, $f1		# move float from $f1 to $v0
+	
+	# pop $t0-$t3 to stack
 	
 	# return to function call
 	jr $ra
