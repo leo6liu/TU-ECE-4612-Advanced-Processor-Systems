@@ -461,16 +461,16 @@ eval:
 	beq $t1, 43, eval_check_next_open			# '+'
 	beq $t1, 45, eval_check_next_open			# '-'
 	# if numeral, check for operator or close parenthesis
-	beq $t1, 48, eval_check_next_operator_or_close		# '0'
-	beq $t1, 49, eval_check_next_operator_or_close		# '1'
-	beq $t1, 50, eval_check_next_operator_or_close		# '2'
-	beq $t1, 51, eval_check_next_operator_or_close		# '3'
-	beq $t1, 52, eval_check_next_operator_or_close		# '4'
-	beq $t1, 53, eval_check_next_operator_or_close		# '5'
-	beq $t1, 54, eval_check_next_operator_or_close		# '6'
-	beq $t1, 55, eval_check_next_operator_or_close		# '7'
-	beq $t1, 56, eval_check_next_operator_or_close		# '8'
-	beq $t1, 57, eval_check_next_operator_or_close		# '9'
+	beq $t1, 48, eval_check_next_operator_or_close	# '0'
+	beq $t1, 49, eval_check_next_operator_or_close	# '1'
+	beq $t1, 50, eval_check_next_operator_or_close	# '2'
+	beq $t1, 51, eval_check_next_operator_or_close	# '3'
+	beq $t1, 52, eval_check_next_operator_or_close	# '4'
+	beq $t1, 53, eval_check_next_operator_or_close	# '5'
+	beq $t1, 54, eval_check_next_operator_or_close	# '6'
+	beq $t1, 55, eval_check_next_operator_or_close	# '7'
+	beq $t1, 56, eval_check_next_operator_or_close	# '8'
+	beq $t1, 57, eval_check_next_operator_or_close	# '9'
 	# if open parenthesis, save to operator stack
 	beq $t1, 40, eval_read_open				# '('
 	# if null terminator, calculate result (probably will never reach)
@@ -493,7 +493,7 @@ eval:
 	jal str_to_float	# execute str_to_float conversion
 	move $s1, $v0		# store float at values[i]
 	sw $s1, 0($s0)		# store float at values[i]
-	addi $s0, $s0, 1	# increment values pointer
+	addi $s0, $s0, 4	# increment values pointer
 	addi $s2, $s2, 1	# increment values index
 	li $s4, 42		# store '*' at operators[i]
 	sb $s4, 0($s3)		# store '*' at operators[i]
@@ -546,8 +546,8 @@ eval:
 	addi $t3, $t3, 1	# increment current index
 	addi $t0, $t0, 1	# move to next char
 	# reset current value indexes
-	move $t4, $t3		# $t3 - current value start
-	move $t4, $t5		# $t5 - current value end
+	move $t4, $t3		# $t4 - current value start
+	move $t5, $t3		# $t5 - current value end
 	# read next value
 	b eval_value
 	
@@ -557,7 +557,7 @@ eval:
 	lb $t1, 0($t0)		# $t1 - char str[i]
 	lb $t2, 1($t0)		# $t2 - char str[i+1]
 	# check if '(' is at top of operator stack
-	beq $t1, 40, eval_read_close_open_found
+	beq $s4, 40, eval_read_close_open_found
 	# load operator and two operands for execution
 	move $a1, $s1		# operand right
 	subi $s0, $s0, 4	# decrement values pointer
@@ -582,12 +582,15 @@ eval:
 	subi $s3, $s3, 1	# decrement operators pointer
 	subi $s5, $s5, 1	# decrement operators pointer
 	lb $s4, -1($s3)		# load operators[i]
+	# move to next character
+	addi $t3, $t3, 1	# increment current index
+	addi $t0, $t0, 1	# move to next char
 	# reset current value indexes
-	move $t4, $t3		# $t3 - current value start
-	move $t4, $t5		# $t5 - current value end
-	# read next value
-	b eval_value
-	
+	move $t4, $t3		# $t4 - current value start
+	move $t5, $t3		# $t5 - current value end
+	# if end is not reached, assume an operator next
+	beq $t2, $zero, eval_deplete_operators
+	b eval_read_operator
 	
 	# process current operator and check operator precedence
 	eval_read_operator:
@@ -638,9 +641,12 @@ eval:
 	sb $s4, 0($s3)		# store current operator at operators[i]
 	addi $s3, $s3, 1	# increment operators pointer
 	addi $s5, $s5, 1	# increment operators index
+	# move to next character
+	addi $t3, $t3, 1	# increment current index
+	addi $t0, $t0, 1	# move to next char
 	# reset current value indexes
-	move $t4, $t3		# $t3 - current value start
-	move $t4, $t5		# $t5 - current value end
+	move $t4, $t3		# $t4 - current value start
+	move $t5, $t3		# $t5 - current value end
 	# read next value
 	b eval_value
 	
@@ -735,6 +741,14 @@ execute_operation:
 #
 str_to_float:
 	# push $t0-$t3 to stack
+	addi $sp, $sp, -4
+	sw $t0, ($sp)
+	addi $sp, $sp, -4
+	sw $t1, ($sp)
+	addi $sp, $sp, -4
+	sw $t2, ($sp)
+	addi $sp, $sp, -4
+	sw $t3, ($sp)
 
 	l.s $f0, fp_positive	# $f0 - float sign
 	li $t0, 0		# $t0 - int value
@@ -805,6 +819,14 @@ str_to_float:
 	mfc1 $v0, $f1		# move float from $f1 to $v0
 	
 	# pop $t0-$t3 to stack
+	lw $t3, ($sp)
+	addi $sp, $sp, 4
+	lw $t2, ($sp)
+	addi $sp, $sp, 4
+	lw $t1, ($sp)
+	addi $sp, $sp, 4
+	lw $t0, ($sp)
+	addi $sp, $sp, 4
 	
 	# return to function call
 	jr $ra
