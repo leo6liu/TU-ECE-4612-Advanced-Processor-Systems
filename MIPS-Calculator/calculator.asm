@@ -66,8 +66,8 @@ main:
 	la $a0, input_buffer
 	jal remove_newline
 	
-	# if input is empty, it is valid
-	beq $v0, $zero, print_valid	# $v0 has strlen after remove_newline()
+	# if input is empty, it is valid but no evaluation is needed
+	beq $v0, $zero, print_valid_no_eval	# $v0 has strlen after remove_newline()
 	
 	# if there are any disallowed symbols, it is invalid
 	la $a0, input_buffer
@@ -107,6 +107,13 @@ main:
 	syscall
 	la $a0, nl
 	li $v0, SYS_PRINT_STRING
+	syscall
+	b main
+	
+	# print Valid input with no expression evaluation then repeat REPL
+	print_valid_no_eval:
+	la $a0, valid
+	li $v0, SYS_PRINT_STRING	# load system call code
 	syscall
 	b main
 	
