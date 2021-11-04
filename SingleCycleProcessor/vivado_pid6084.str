@@ -1,0 +1,339 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 6084
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Nov 03 16:36:33 PDT 2021
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x995
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	rktli
+User home directory: C:/Users/rktli
+User working directory: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/rktli/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/rktli/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/rktli/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/vivado.log
+Vivado journal file location: 	C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/vivado.jou
+Engine tmp dir: 	C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/.Xil/Vivado-6084-DESKTOP-30HH0DN
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,030 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1752 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2377 ms.
+// Opening Vivado Project: C:\Users\rktli\Documents\GitHub\TU-ECE-4612-Advanced-Processor-Systems\SingleCycleProcessor\SingleCycleProcessor.xpr. Version: Vivado v2020.2 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 834ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1468 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,030 MB. GUI used memory: 51 MB. Current time: 11/3/21, 4:36:35 PM PDT
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor' INFO: [Project 1-313] Project file moved from 'Z:/F - ECE 4612/SingleCycleProcessor' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+99949kb) [00:01:05]
+// [Engine Memory]: 1,030 MB (+928102kb) [00:01:05]
+// [GUI Memory]: 118 MB (+16346kb) [00:01:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  18665 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1388 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:01:31 ; elapsed = 00:00:43 . Memory (MB): peak = 1017.145 ; gain = 0.000 
+// Project name: SingleCycleProcessor; location: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bz
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 523ms to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 136 MB (+12861kb) [00:01:34]
+// Elapsed time: 311 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1276 ms.
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3782 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 350ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 74 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "LeftShifter"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 85 seconds
+dismissDialog("Add Sources"); // c
+// bz (cr):  Add Sources  : addNotify
+// Tcl Message: close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// I (cr): Define Module: addNotify
+dismissDialog("Add Sources"); // bz
+// Elapsed time: 45 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in", 0, "Port Name", 0); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 1, "Port Name", 0); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out ; input ; false ; 0 ; 0", 1, "input", 1); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 1, "Direction", 1); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in ; input ; false ; 0 ; 0", 0, "false", 2); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out ; output ; false ; 0 ; 0", 1, "false", 2); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in ; input ; true ; 0 ; 0", 0, "0", 3); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "0", 0, "MSB", 3); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "0", 1, "MSB", 3); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "in ; input ; true ; 0 ; 0", 0, "0", 3); // ab
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "31", 0, "MSB", 3); // ab
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out ; output ; true ; 0 ; 0", 1, "0", 3); // ab
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "31", 1, "MSB", 3); // ab
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 614ms to process. Increasing delay to 4000 ms.
+// PAPropertyPanels.initPanels (LeftShifter.v) elapsed time: 0.8s
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LeftShifter (LeftShifter.v)]", 3, false); // D
+// WARNING: HEventQueue.dispatchEvent() is taking  2060 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LeftShifter (LeftShifter.v)]", 3, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  2511 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 618ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 71 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SignExtender (SignExtender.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SignExtender (SignExtender.v)]", 2, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1361 ms.
+selectCodeEditor("SignExtender.v", 1, 28); // bP
+typeControlKey((HResource) null, "SignExtender.v", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LeftShifter.v", 1); // m
+// WARNING: HEventQueue.dispatchEvent() is taking  1041 ms.
+selectCodeEditor("LeftShifter.v", 591, 328); // bP
+typeControlKey((HResource) null, "LeftShifter.v", 'v'); // bP
+selectCodeEditor("LeftShifter.v", 112, 78); // bP
+selectCodeEditor("LeftShifter.v", 141, 106); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("LeftShifter.v", 159, 276); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SignExtender.v", 2); // m
+selectCodeEditor("SignExtender.v", 268, 303); // bP
+typeControlKey((HResource) null, "SignExtender.v", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LeftShifter.v", 1); // m
+selectCodeEditor("LeftShifter.v", 171, 324); // bP
+selectCodeEditor("LeftShifter.v", 229, 312); // bP
+typeControlKey((HResource) null, "LeftShifter.v", 'v'); // bP
+selectCodeEditor("LeftShifter.v", 129, 313); // bP
+selectCodeEditor("LeftShifter.v", 177, 309); // bP
+selectCodeEditor("LeftShifter.v", 159, 316); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("LeftShifter.v", 207, 315); // bP
+selectCodeEditor("LeftShifter.v", 157, 313); // bP
+selectCodeEditor("LeftShifter.v", 284, 313); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LeftShifter (LeftShifter.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LeftShifter (LeftShifter.v)]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// bz (cr):  Set as Top : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top LeftShifter [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // bz
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 910ms to process. Increasing delay to 5000 ms.
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "LeftShifter_tb"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 12 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // c
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bz (cr):  Add Simulation Sources  : addNotify
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v 
+// I (cr): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bz
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1058ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1058 ms.
+// [GUI Memory]: 144 MB (+709kb) [00:13:58]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 112 seconds
+selectCodeEditor("LeftShifter.v", 25, 314); // bP
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, LeftShifter_tb (LeftShifter_tb.v)]", 16, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, LeftShifter_tb (LeftShifter_tb.v)]", 16, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1024 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, SignExtender_tb (SignExtender_tb.v)]", 8, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, SignExtender_tb (SignExtender_tb.v)]", 8, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1044 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, LeftShifter_tb (LeftShifter_tb.v)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, LeftShifter_tb (LeftShifter_tb.v)]", 17, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bz (cr):  Set as Top : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top LeftShifter_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // bz
+selectCodeEditor("SignExtender_tb.v", 624, 172); // bP
+typeControlKey((HResource) null, "SignExtender_tb.v", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LeftShifter_tb.v", 2); // m
+selectCodeEditor("LeftShifter_tb.v", 596, 332); // bP
+typeControlKey((HResource) null, "LeftShifter_tb.v", 'v'); // bP
+selectCodeEditor("LeftShifter_tb.v", 115, 72); // bP
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("LeftShifter_tb.v", 27, 265); // bP
+selectCodeEditor("LeftShifter_tb.v", 175, 229); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SignExtender_tb.v", 3); // m
+selectCodeEditor("SignExtender_tb.v", 27, 241); // bP
+typeControlKey((HResource) null, "SignExtender_tb.v", 'c'); // bP
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectCodeEditor("LeftShifter_tb.v", 78, 259); // bP
+typeControlKey((HResource) null, "LeftShifter_tb.v", 'v'); // bP
+selectCodeEditor("LeftShifter_tb.v", 166, 280); // bP
+selectCodeEditor("LeftShifter_tb.v", 69, 262); // bP
+selectCodeEditor("LeftShifter_tb.v", 110, 312); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("LeftShifter_tb.v", 120, 364); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("LeftShifter_tb.v", 324, 368); // bP
+selectCodeEditor("LeftShifter_tb.v", 342, 382); // bP
+selectCodeEditor("LeftShifter_tb.v", 129, 382); // bP
+selectCodeEditor("LeftShifter_tb.v", 117, 378); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1126 ms.
+selectCodeEditor("LeftShifter_tb.v", 414, 376); // bP
+selectCodeEditor("LeftShifter_tb.v", 321, 364); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("LeftShifter_tb.v", 257, 384); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  7563 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3023 ms. Increasing delay to 9069 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2035 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1082 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5538 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 24606 ms. Increasing delay to 73818 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1122 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1394 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2175 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6613 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7191 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 7370ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7372 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,030 MB. GUI used memory: 82 MB. Current time: 11/3/21, 5:06:45 PM PDT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 571ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 4260ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4260 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 299 ms. Decreasing delay to 2299 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1613 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1043 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1376 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1949 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  497981 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1644 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2858 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8097621 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,030 MB. GUI used memory: 83 MB. Current time: 11/3/21, 7:35:30 PM PDT
