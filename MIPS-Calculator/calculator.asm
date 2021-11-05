@@ -35,10 +35,10 @@
 
 # initialize memory with data
 .data
-prompt: .asciiz ">>> "			# expression input prompt
+prompt: .asciiz ">>> "				# expression input prompt
 valid: .asciiz "Valid input\n"		# valid expression response
 invalid: .asciiz "Invalid input\n"	# invalid expression response
-input_buffer: .space 67		# reserve data segment of 64 bytes + null to store user input
+input_buffer: .space 67				# reserve data segment of 64 bytes + null to store user input
 values: .space VALUES_SIZE
 operators: .space OPERATORS_SIZE
 fp_positive: .float +1.0
@@ -176,8 +176,8 @@ check_symbols:
 	beq $t0, 40, check_symbols_loop0	# '('
 	beq $t0, 41, check_symbols_loop0	# ')'
 	beq $t0, 32, check_symbols_loop0	# ' '
-	blt $t0, 48, check_symbols_found # less than '0'
-	bgt $t0, 57, check_symbols_found # greater than '9'
+	blt $t0, 48, check_symbols_found	# less than '0'
+	bgt $t0, 57, check_symbols_found	# greater than '9'
 	b check_symbols_loop0
 	
 	# return 0; // (no disallowed symbols found)
