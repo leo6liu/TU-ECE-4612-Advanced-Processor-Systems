@@ -15,7 +15,8 @@
 #   Expressions should include only "()0123456789+-*/ ". If there is an error in
 #   an expression, "Invalid input" will be written to the I/O window; if there 
 #   is no error, "Valid input" will be written instead. The program will loop so
-#   that users can enter new expressions without re-running the program.
+#   that users can enter new expressions without re-running the program. Valid 
+#   expressions will also be mathematically evaluated.
 #
 #-------------------------------------------------------------------------------
 
