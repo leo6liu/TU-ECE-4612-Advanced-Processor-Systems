@@ -337,3 +337,222 @@ selectCodeEditor("LeftShifter_tb.v", 257, 384); // bP
 // WARNING: HEventQueue.dispatchEvent() is taking  2858 ms.
 // WARNING: HEventQueue.dispatchEvent() is taking  8097621 ms.
 // HMemoryUtils.trashcanNow. Engine heap size: 1,030 MB. GUI used memory: 83 MB. Current time: 11/3/21, 7:35:30 PM PDT
+// Elapsed time: 10080 seconds
+selectCodeEditor("LeftShifter_tb.v", 231, 393); // bP
+selectCodeEditor("LeftShifter_tb.v", 214, 337); // bP
+selectCodeEditor("LeftShifter_tb.v", 302, 343); // bP
+selectCodeEditor("LeftShifter_tb.v", 293, 358); // bP
+selectCodeEditor("LeftShifter_tb.v", 169, 404); // bP
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, SignExtender_tb (SignExtender_tb.v)]", 15); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'LeftShifter_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)... INFO: [USF-XSim-101] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj LeftShifter_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.145 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '5' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LeftShifter_tb_behav xil_defaultlib.LeftShifter_tb xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Built simulation snapshot LeftShifter_tb_behav 
+// Tcl Message:  ****** Webtalk v2020.2 (64-bit)   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020   **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.  source C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/xsim.dir/LeftShifter_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Common 17-186] 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/xsim.dir/LeftShifter_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Nov  3 19:43:17 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 116.379 ; gain = 23.824 INFO: [Common 17-206] Exiting Webtalk at Wed Nov  3 19:43:17 2021... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 1017.145 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "LeftShifter_tb_behav -key {Behavioral:sim_1:Functional:LeftShifter_tb} -tclbatch {LeftShifter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2020.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// WARNING: HEventQueue.dispatchEvent() is taking  1709 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 31 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: source LeftShifter_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,030 MB. GUI used memory: 89 MB. Current time: 11/3/21, 7:43:22 PM PDT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: $finish called at time : 30 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" Line 24 
+// Tcl Message: xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.145 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'LeftShifter_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1017.145 ; gain = 0.000 
+// 'd' command handler elapsed time: 33 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Elapsed time: 75 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // m
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // E
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LeftShifter_tb.v", 1); // m
+selectCodeEditor("LeftShifter_tb.v", 246, 367); // bP
+selectCodeEditor("LeftShifter_tb.v", 262, 369); // bP
+selectCodeEditor("LeftShifter_tb.v", 306, 371); // bP
+selectCodeEditor("LeftShifter_tb.v", 261, 364); // bP
+selectCodeEditor("LeftShifter_tb.v", 312, 364); // bP
+selectCodeEditor("LeftShifter_tb.v", 300, 365); // bP
+selectCodeEditor("LeftShifter_tb.v", 318, 385); // bP
+selectCodeEditor("LeftShifter_tb.v", 349, 386); // bP
+selectCodeEditor("LeftShifter_tb.v", 350, 373); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LeftShifter_tb.v", 1); // m
+selectCodeEditor("LeftShifter_tb.v", 272, 366); // bP
+selectCodeEditor("LeftShifter_tb.v", 272, 378); // bP
+selectCodeEditor("LeftShifter_tb.v", 508, 315); // bP
+selectCodeEditor("LeftShifter_tb.v", 416, 374); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // m
+// Elapsed time: 88 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LeftShifter_tb.v", 1); // m
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - LeftShifter_tb", "DesignTask.SIMULATION");
+// bz (cr):  Close : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1047 ms.
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  2344 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1017.145 ; gain = 0.000 
+// Elapsed time: 17 seconds
+dismissDialog("Close"); // bz
+selectCodeEditor("LeftShifter_tb.v", 154, 207); // bP
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LeftShifter.v", 1); // m
+selectCodeEditor("LeftShifter.v", 130, 383); // bP
+selectCodeEditor("LeftShifter.v", 287, 76); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("LeftShifter.v", 188, 125); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bz (cr):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7z020clg484-1 Top: LeftShifter 
+// WARNING: HEventQueue.dispatchEvent() is taking  2567 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 87 MB. Current time: 11/3/21, 7:48:21 PM PDT
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,241 MB. GUI used memory: 87 MB. Current time: 11/3/21, 7:48:34 PM PDT
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 87 MB. Current time: 11/3/21, 7:48:43 PM PDT
+// [Engine Memory]: 1,372 MB (+304640kb) [03:12:46]
+// Xgd.load filename: C:/Xilinx/Vivado/2020.2/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.7s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.7s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1s
+// [Engine Memory]: 1,471 MB (+32318kb) [03:12:49]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2554 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1352.711 ; gain = 252.785 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'LeftShifter' [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v:14] INFO: [Synth 8-6155] done synthesizing module 'LeftShifter' (1#1) [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v:14] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1427.828 ; gain = 327.902 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1434.059 ; gain = 334.133 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1434.059 ; gain = 334.133 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1434.059 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1466.422 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1552.129 ; gain = 452.203 
+// Tcl Message: 5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 1552.129 ; gain = 534.984 
+// [GUI Memory]: 171 MB (+20681kb) [03:12:51]
+// 'dV' command handler elapsed time: 56 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1118 ms.
+// Elapsed time: 56 seconds
+dismissDialog("Open Elaborated Design"); // bz
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1747 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1146 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,485 MB. GUI used memory: 108 MB. Current time: 11/3/21, 8:18:46 PM PDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1525 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5631 ms. Increasing delay to 16893 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2948 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1311 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,485 MB. GUI used memory: 108 MB. Current time: 11/10/21, 6:32:57 PM PST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 20 ms. Decreasing delay to 2020 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1789 ms.
