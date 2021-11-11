@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov  3 16:34:41 2021
+# Process ID: 6084
+# Current directory: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7756 C:\Users\rktli\Documents\GitHub\TU-ECE-4612-Advanced-Processor-Systems\SingleCycleProcessor\SingleCycleProcessor.xpr
+# Log file: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/vivado.log
+# Journal file: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.xpr
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v w ]
+add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top LeftShifter [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v w ]
+add_files -fileset sim_1 C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top LeftShifter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source LeftShifter_tb.tcl
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1

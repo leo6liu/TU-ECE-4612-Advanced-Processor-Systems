@@ -1,6 +1,6 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LeftShifter_tb_behav xil_defaultlib.LeftShifter_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedAdder32bit_tb_behav xil_defaultlib.SignedAdder32bit_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -8,7 +8,12 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.LeftShifter
-Compiling module xil_defaultlib.LeftShifter_tb
+Compiling module xil_defaultlib.HalfAdder
+Compiling module xil_defaultlib.FullAdder
+Compiling module xil_defaultlib.Adder4bit
+Compiling module xil_defaultlib.Adder16bit
+Compiling module xil_defaultlib.Adder32bit
+Compiling module xil_defaultlib.SignedAdder32bit
+Compiling module xil_defaultlib.SignedAdder32bit_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot LeftShifter_tb_behav
+Built simulation snapshot SignedAdder32bit_tb_behav
