@@ -27,3 +27,7 @@ set_property top LeftShifter_tb [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source LeftShifter_tb.tcl
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1

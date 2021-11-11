@@ -169,3 +169,5 @@ RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Mem
 5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 1552.129 ; gain = 534.984
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 10 18:35:04 2021...
