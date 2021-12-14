@@ -22,10 +22,12 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-
 INFO: [VRFC 10-311] analyzing module InstructionMemory
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:31]
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:38]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Divider32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedDivider32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedDivider32bit
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Mux2to1_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
@@ -54,3 +56,7 @@ INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
 WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Divider32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedDivider32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedDivider32bit_tb

@@ -28,14 +28,14 @@ module SignedMultiplier32bit(
     
     always @ (a or b) begin
         // negate a if negative
-        if (a[31] == 0'b1) begin
+        if (a[31] == 1'b1) begin
             a_unsigned = -a;
         end else begin
             a_unsigned = a;
         end
         
         // negate b if negative
-        if (b[31] == 0'b1) begin
+        if (b[31] == 1'b1) begin
             b_unsigned = -b;
         end else begin
             b_unsigned = b;

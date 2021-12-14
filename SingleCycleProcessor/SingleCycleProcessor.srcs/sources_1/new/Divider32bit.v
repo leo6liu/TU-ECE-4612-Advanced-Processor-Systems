@@ -12,38 +12,45 @@
 
 
 module Divider32bit(
-    input [31:0] a,
-    input [31:0] b,
-    output reg [31:0] out_q,
-    output reg [31:0] out_r
+    input [31:0] a, // dividend
+    input [31:0] b, // divisor
+    output reg [31:0] out_q, // quotient
+    output reg [31:0] out_r // remainder
     );
     
     integer i;
     
-    reg [31:0] dividend;
-    reg [31:0] divisor;
+    //reg [31:0] dividend;
+    reg [63:0] divisor;
     reg [31:0] quotient;
-    reg [31:0] remainder;
+    reg [63:0] remainder;
     
     always @ (a or b) begin
-        dividend = a;
-        divisor = b;
+        //dividend = a;
+        divisor = {b,32'b0};
         quotient = 0;
-        remainder = 0;
+        remainder = {32'b0,a};
         
-        for (i = 0; i < 32; i = i + 1) begin
-            //if (multiplier[0] == 1'b1) begin
-            //    product = product + multiplicand;
-            //end
+        for (i = 0; i < 33; i = i + 1) begin
+            // subtrtact divisor from remainder
+            remainder = remainder - divisor;
             
-            // shift multiplicand left 1 bit
-            //multiplicand = {multiplicand[63:0],1'b0};
+            // check if remainder is >= 0
+            if (remainder[63] != 1'b1) begin
+                // shift quotient left, setting new rightmost bit to 1
+                quotient = {quotient[30:0],1'b1};
+            end else begin
+                // restore remainder by adding divisor back
+                remainder = remainder + divisor;
+                // shift quotient left, setting new rightmost bit to 0
+                quotient = {quotient[30:0],1'b0};
+            end
             
-            // shift multiplier right 1 bit
-            //multiplier = {1'b0,multiplier[31:1]};
+            // shift divisor right
+            divisor = {1'b0,divisor[63:1]};
         end
         
         out_q = quotient;
-        out_r = remainder;
+        out_r = remainder[31:0];
     end
 endmodule
