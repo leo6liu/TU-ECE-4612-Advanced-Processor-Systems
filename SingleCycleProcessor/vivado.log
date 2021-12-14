@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Dec  1 15:44:50 2021
-# Process ID: 1784
+# Start of session at: Mon Dec 13 07:48:18 2021
+# Process ID: 8824
 # Current directory: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2536 C:\Users\rktli\Documents\GitHub\TU-ECE-4612-Advanced-Processor-Systems\SingleCycleProcessor\SingleCycleProcessor.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2632 C:\Users\rktli\Documents\GitHub\TU-ECE-4612-Advanced-Processor-Systems\SingleCycleProcessor\SingleCycleProcessor.xpr
 # Log file: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/vivado.log
 # Journal file: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor\vivado.jou
 #-----------------------------------------------------------
@@ -19,37 +19,48 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.582 ; gain = 0.000
-close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v w ]
-add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v
-set_property top InstructionMemory [current_fileset]
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1017.383 ; gain = 0.000
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier1bit.v w ]
+add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier1bit.v
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v w ]
+add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v w ]
+add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v w ]
-add_files -fileset sim_1 C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v
-set_property top InstructionMemory_tb [get_filesets sim_1]
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v w ]
+add_files -fileset sim_1 C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v
+export_ip_user_files -of_objects  [get_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier1bit.v] -no_script -reset -force -quiet
+remove_files  C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier1bit.v
+file delete -force C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier1bit.v
+set_property top Multiplier32bit_tb [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top Multiplier32bit [current_fileset]
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Multiplier32bit_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/program.txt'
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
 INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+"xvlog --incr --relax -prj Multiplier32bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
+"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Multiplier32bit_tb_behav xil_defaultlib.Multiplier32bit_tb xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Multiplier32bit_tb_behav xil_defaultlib.Multiplier32bit_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -57,30 +68,30 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionMemory_tb
+Compiling module xil_defaultlib.Multiplier32bit
+Compiling module xil_defaultlib.Multiplier32bit_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot InstructionMemory_tb_behav
+Built simulation snapshot Multiplier32bit_tb_behav
 
 ****** Webtalk v2020.2 (64-bit)
   **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
   **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
-source C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/xsim.dir/InstructionMemory_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/xsim.dir/InstructionMemory_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Dec  1 15:57:50 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 116.355 ; gain = 17.574
-INFO: [Common 17-206] Exiting Webtalk at Wed Dec  1 15:57:50 2021...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1017.582 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+source C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/xsim.dir/Multiplier32bit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/xsim.dir/Multiplier32bit_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec 13 16:47:09 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 98.980 ; gain = 17.582
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 13 16:47:09 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1017.383 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "InstructionMemory_tb_behav -key {Behavioral:sim_1:Functional:InstructionMemory_tb} -tclbatch {InstructionMemory_tb.tcl} -log {simulate.log}"
+   with args "Multiplier32bit_tb_behav -key {Behavioral:sim_1:Functional:Multiplier32bit_tb} -tclbatch {Multiplier32bit_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-source InstructionMemory_tb.tcl
+source Multiplier32bit_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -91,738 +102,1037 @@ source InstructionMemory_tb.tcl
 #   }
 # }
 # run 1000ns
-WARNING: File program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionMemory_tb_behav' loaded.
+$finish called at time : 50 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" Line 27
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Multiplier32bit_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1017.582 ; gain = 0.000
-add_bp {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v} 24
-relaunch_sim
-suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1017.582 ; gain = 0.000
-Command: launch_simulation -simset sim_1 -mode behavioral
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:23 . Memory (MB): peak = 1017.383 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 1017.383 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" Line 24
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1017.582 ; gain = 0.000
-run 10 us
-WARNING: File program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-remove_bps -file {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v} -line 24
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
-WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionMemory_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot InstructionMemory_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-WARNING: File ./program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.582 ; gain = 0.000
-get_property DIRECTORY [current_project]
-C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-WARNING: File ./program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.582 ; gain = 0.000
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
-WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionMemory_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot InstructionMemory_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-WARNING: File program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.582 ; gain = 0.000
-ls
-ambiguous command name "ls": lsearch lset lsort
-get_property DIRECTORY [current_project]
-C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
-WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionMemory_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot InstructionMemory_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.582 ; gain = 0.000
-echo $work_directory
-can't read "work_directory": no such variable
-echo %cd%
-WARNING: [Common 17-259] Unknown Tcl command 'echo %cd%' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
-C:\Users\rktli\Documents\GitHub\TU-ECE-4612-Advanced-Processor-Systems\SingleCycleProcessor
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
-WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionMemory_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot InstructionMemory_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-WARNING: File %cd%/program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.582 ; gain = 0.000
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
-WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionMemory_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot InstructionMemory_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-WARNING: File ./program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.582 ; gain = 0.000
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
-WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionMemory_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot InstructionMemory_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-WARNING: File .program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.582 ; gain = 0.000
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux2to1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder16bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder32bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder4bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HalfAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtender_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LeftShifter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
-WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionMemory_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot InstructionMemory_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-WARNING: File program.txt referenced on C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v at line 24 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.582 ; gain = 0.000
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/program.txt
-relaunch_sim
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'InstructionMemory_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Multiplier32bit_tb' in fileset 'sim_1'...
 INFO: [SIM-utils-43] Exported 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/program.txt'
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
 INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj InstructionMemory_tb_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-Command: launch_simulation -simset sim_1 -mode behavioral
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Multiplier32bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
+WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
-"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log"
+"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Multiplier32bit_tb_behav xil_defaultlib.Multiplier32bit_tb xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionMemory_tb_behav xil_defaultlib.InstructionMemory_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Multiplier32bit_tb_behav xil_defaultlib.Multiplier32bit_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Multiplier32bit
+Compiling module xil_defaultlib.Multiplier32bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Multiplier32bit_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Multiplier32bit_tb_behav -key {Behavioral:sim_1:Functional:Multiplier32bit_tb} -tclbatch {Multiplier32bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.582 ; gain = 0.000
+source Multiplier32bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 50 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" Line 27
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Multiplier32bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.383 ; gain = 0.000
+add_bp {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v} 28
+run all
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 28
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 29
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 30
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 32
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 32
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 34
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 35
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 39
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 42
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 32
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Multiplier32bit_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/program.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Multiplier32bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
+WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Multiplier32bit_tb_behav xil_defaultlib.Multiplier32bit_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Multiplier32bit_tb_behav xil_defaultlib.Multiplier32bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Multiplier32bit
+Compiling module xil_defaultlib.Multiplier32bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Multiplier32bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Multiplier32bit_tb_behav -key {Behavioral:sim_1:Functional:Multiplier32bit_tb} -tclbatch {Multiplier32bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source Multiplier32bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" Line 28
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Multiplier32bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.383 ; gain = 0.000
+remove_bps -file {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v} -line 28
+run all
+$finish called at time : 50 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" Line 27
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Multiplier32bit_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/program.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Multiplier32bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
+WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Multiplier32bit_tb_behav xil_defaultlib.Multiplier32bit_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Multiplier32bit_tb_behav xil_defaultlib.Multiplier32bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Multiplier32bit
+Compiling module xil_defaultlib.Multiplier32bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Multiplier32bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Multiplier32bit_tb_behav -key {Behavioral:sim_1:Functional:Multiplier32bit_tb} -tclbatch {Multiplier32bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source Multiplier32bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" Line 28
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Multiplier32bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.383 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v w ]
+add_files -fileset sim_1 C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v
+set_property top SignedMultiplier32bit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SignedMultiplier32bit_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/program.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SignedMultiplier32bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:34]
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:39]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
+WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v:25]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedMultiplier32bit_tb_behav xil_defaultlib.SignedMultiplier32bit_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedMultiplier32bit_tb_behav xil_defaultlib.SignedMultiplier32bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SignedMultiplier32bit
+Compiling module xil_defaultlib.SignedMultiplier32bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SignedMultiplier32bit_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/xsim.dir/SignedMultiplier32bit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/xsim.dir/SignedMultiplier32bit_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec 13 17:19:11 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 116.371 ; gain = 23.531
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec 13 17:19:11 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1017.383 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SignedMultiplier32bit_tb_behav -key {Behavioral:sim_1:Functional:SignedMultiplier32bit_tb} -tclbatch {SignedMultiplier32bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source SignedMultiplier32bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" Line 28
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SignedMultiplier32bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1017.383 ; gain = 0.000
+add_bp {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v} 30
+remove_bps -file {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v} -line 30
+add_bp {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v} 29
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 29
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 56
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 57
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 58
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 59
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 20
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 46
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 47
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 49
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 51
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 52
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 53
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 54
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" Line 22
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" Line 22
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" Line 22
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 62
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 63
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 64
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 70
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 71
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 76
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 77
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 56
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 58
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 57
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/glbl.v" Line 59
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 30
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 31
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 34
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1017.383 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SignedMultiplier32bit_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/program.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SignedMultiplier32bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:31]
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
+WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v:25]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedMultiplier32bit_tb_behav xil_defaultlib.SignedMultiplier32bit_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedMultiplier32bit_tb_behav xil_defaultlib.SignedMultiplier32bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SignedMultiplier32bit
+Compiling module xil_defaultlib.SignedMultiplier32bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SignedMultiplier32bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SignedMultiplier32bit_tb_behav -key {Behavioral:sim_1:Functional:SignedMultiplier32bit_tb} -tclbatch {SignedMultiplier32bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source SignedMultiplier32bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 29
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SignedMultiplier32bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.383 ; gain = 0.000
+remove_bps -file {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v} -line 29
+run all
+$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" Line 28
+add_bp {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v} 31
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 31
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 34
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 38
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 41
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 44
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 45
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 46
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 50
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 51
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 55
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 58
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 50
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 55
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 58
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 50
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 55
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 58
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 50
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 55
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 58
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 50
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 55
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 58
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 48
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 50
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 55
+step
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 58
+run all
+Stopped at time : 10 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 31
+step
+Stopped at time : 10 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 34
+step
+Stopped at time : 10 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 38
+step
+Stopped at time : 10 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 41
+step
+Stopped at time : 10 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 44
+step
+Stopped at time : 10 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 45
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+Stopped at time : 0 fs : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" Line 31
+remove_bps -file {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v} -line 31
+run all
+$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" Line 28
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SignedMultiplier32bit_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/program.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SignedMultiplier32bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:31]
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
+WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v:25]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedMultiplier32bit_tb_behav xil_defaultlib.SignedMultiplier32bit_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedMultiplier32bit_tb_behav xil_defaultlib.SignedMultiplier32bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SignedMultiplier32bit
+Compiling module xil_defaultlib.SignedMultiplier32bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SignedMultiplier32bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SignedMultiplier32bit_tb_behav -key {Behavioral:sim_1:Functional:SignedMultiplier32bit_tb} -tclbatch {SignedMultiplier32bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source SignedMultiplier32bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" Line 28
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SignedMultiplier32bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.383 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SignedMultiplier32bit_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim/program.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SignedMultiplier32bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:31]
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:38]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux2to1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder32bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder4bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HalfAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtender_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LeftShifter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedAdder32bit_tb
+WARNING: [VRFC 10-2581] 2147483648 as 32-bit signed integer overflows, using -2147483648 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier32bit_tb
+WARNING: [VRFC 10-2581] 2882400000 as 32-bit signed integer overflows, using -1412567296 instead [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignedMultiplier32bit_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+"xelab -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedMultiplier32bit_tb_behav xil_defaultlib.SignedMultiplier32bit_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto c61ec431e6874e3bba603f8e13e90667 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SignedMultiplier32bit_tb_behav xil_defaultlib.SignedMultiplier32bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SignedMultiplier32bit
+Compiling module xil_defaultlib.SignedMultiplier32bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SignedMultiplier32bit_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SignedMultiplier32bit_tb_behav -key {Behavioral:sim_1:Functional:SignedMultiplier32bit_tb} -tclbatch {SignedMultiplier32bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source SignedMultiplier32bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" Line 28
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SignedMultiplier32bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1017.383 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Divider32bit.v w ]
+add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/Divider32bit.v
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedDivider32bit.v w ]
+add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedDivider32bit.v
+set_property top SignedMultiplier32bit [current_fileset]
 synth_design -rtl -rtl_skip_mlo -name rtl_1
 Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
 Starting synth_design
 Using part: xc7z020clg484-1
-Top: InstructionMemory
+Top: SignedMultiplier32bit
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1382.223 ; gain = 249.559
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1489.180 ; gain = 253.305
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v:14]
-	Parameter WIDTH bound to: 32 - type: integer 
-	Parameter DEPTH bound to: 1024 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'program.txt' is read successfully [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (1#1) [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v:14]
+INFO: [Synth 8-6157] synthesizing module 'SignedMultiplier32bit' [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'SignedMultiplier32bit' (1#1) [C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1458.293 ; gain = 325.629
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1564.895 ; gain = 329.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1468.148 ; gain = 335.484
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1570.789 ; gain = 334.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1468.148 ; gain = 335.484
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1570.789 ; gain = 334.914
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1468.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1570.789 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1672.707 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1570.891 ; gain = 438.227
-6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1739.578 ; gain = 503.703
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1570.891 ; gain = 553.309
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1739.578 ; gain = 722.195
 close_design
-exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  1 16:43:23 2021...
+set_property top Divider32bit [current_fileset]

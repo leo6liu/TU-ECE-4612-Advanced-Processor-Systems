@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec  1 15:44:50 2021
+# Process ID: 1784
+# Current directory: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2536 C:\Users\rktli\Documents\GitHub\TU-ECE-4612-Advanced-Processor-Systems\SingleCycleProcessor\SingleCycleProcessor.xpr
+# Log file: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/vivado.log
+# Journal file: C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.xpr
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v w ]
+add_files C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionMemory [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v w ]
+add_files -fileset sim_1 C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionMemory_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+source InstructionMemory_tb.tcl
+add_bp {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v} 24
+relaunch_sim
+run 10 us
+remove_bps -file {C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v} -line 24
+relaunch_sim
+get_property DIRECTORY [current_project]
+relaunch_sim
+relaunch_sim
+ls
+get_property DIRECTORY [current_project]
+relaunch_sim
+echo $work_directory
+echo %cd%
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/program.txt
+relaunch_sim
+close_sim
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
