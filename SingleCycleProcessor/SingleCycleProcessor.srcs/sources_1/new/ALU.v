@@ -35,12 +35,12 @@ module ALU(
     assign res_and = a & b;
     assign res_or = a | b;
     assign res_slt = (a < b) ? 1 : 0;
-    SignedAdder32bit        M1(.a(a),.b(b),.c_in(1'b0),.sum(res_addition));
-    SignedSubtractor32bit   M2(.a(a),.b(b),.difference(res_subtraction));
+    SignedAdder32bit        M1(.a(a),.b(b),.c_in(1'b0),.sum(res_add));
+    SignedSubtractor32bit   M2(.a(a),.b(b),.difference(res_sub));
     SignedMultiplier32bit   M3(.a(a),.b(b),.out_hi(res_muh),.out_lo(res_mul));
     SignedDivider32bit      M4(.a(a),.b(b),.out_q(res_div),.out_r(res_mod));
 
-    always @(ctl, a, b) begin
+    always @(ctl, res_and, res_or, res_slt, res_add, res_sub, res_mul, res_muh, res_div, res_mod) begin
         case (ctl)
             4'b0000: result <= res_and;
             4'b0001: result <= res_or;

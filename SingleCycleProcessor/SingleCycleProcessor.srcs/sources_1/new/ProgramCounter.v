@@ -22,6 +22,6 @@ module ProgramCounter(
     end
     
     always @(posedge clk) begin
-        pc_current <= pc_current;//pc_next;
+        pc_current <= pc_next;
     end
 endmodule

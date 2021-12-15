@@ -1,21 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Engineer: Leo Battalora
 // 
-// Create Date: 12/15/2021 05:50:52 AM
-// Design Name: 
 // Module Name: SingleCycleProcessor_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
+// Project Name: SingleCycleProcessor
 // Description: 
 // 
 // Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -26,20 +17,21 @@ module SingleCycleProcessor_tb();
     
     SingleCycleProcessor M01(.clk(clk));
     
-    initial begin
-        clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
-        clk = 1; #10 clk = 0; #10
+    initial begin : clock_gen
+        integer cycles, i;
+        
+        // set number of cycles to run (safe: instructions + 1)
+        cycles = 15;
+        
+        // first clock cycle
+        clk = 0; #20
+        cycles = cycles - 1;
+        
+        // remaining clock cycles
+        for (i = 0; i < cycles; i = i + 1) begin
+            clk = 1; #10;
+            clk = 0; #10;
+        end
         $finish;
     end
 endmodule

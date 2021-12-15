@@ -18,8 +18,8 @@ module Registers(
     input [31:0] write_data,
     input clk,
     input reg_write,
-    output reg [31:0] read_data_1,
-    output reg [31:0] read_data_2
+    output [31:0] read_data_1,
+    output [31:0] read_data_2
     );
     
     // register space with 32 locations [0:31] (depth) each of 32 bits [31:0] (width)
@@ -40,11 +40,6 @@ module Registers(
         end
     end
     
-    always @(read_reg_1) begin
-        read_data_1 <= registers[read_reg_1];
-    end
-    
-    always @(read_reg_2) begin
-        read_data_2 <= registers[read_reg_2];
-    end
+    assign read_data_1 = registers[read_reg_1];
+    assign read_data_2 = registers[read_reg_2];
 endmodule
