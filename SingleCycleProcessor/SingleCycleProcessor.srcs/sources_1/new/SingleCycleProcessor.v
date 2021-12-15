@@ -21,20 +21,24 @@ module SingleCycleProcessor(
     wire [31:0] pc_jump_addr; // new address calculated from jump
     wire [31:0] pc_branch_calc; // new address calculated if branch occurs
     wire [31:0] pc_branch_res; // new address selected from branch or normal +4
-    wire [31:0] immediate_offset; // sign-extended branch offset
+    wire [31:0] immediate; // sign-extended branch offset
     wire [31:0] branch_offset_shifted; // sign-extended branch offset shifted
     wire [31:0] pc_next;
     wire [31:0] instruction;
-    wire [31:0] rs_data; // source register 1
+    wire [31:0] rs_data; // source register 1 (alu_input_1)
     wire [31:0] rt_data; // source register 2
+    wire [31:0] alu_input_2; // either rt_data or immediate
     wire [31:0] rd_data; // destination register
+    wire [31:0] alu_result;
     wire [4:0] write_reg; // destination register to write to
+    wire [3:0] alu_ctl; // output of ALUControl to dictact which operation ALU performs
     wire reg_write;
     wire mem_write;
     wire reg_dst_sel;
     wire jump_src_sel;
     wire branch_src_sel;
     wire branch_src_sel_res;
+    wire alu_src_sel;
     wire alu_zero; // output from ALU indicating a 0 result
     
     Control             M00();
@@ -44,8 +48,8 @@ module SingleCycleProcessor(
     Adder32bit          M03(.a(pc),.b(32'd4),.c_in(1'b0),.sum(pc_plus_4));
     LeftShifter         M04(.in(instruction[25:0]),.out(instr_index_shifted));
     assign pc_jump_addr = {pc_plus_4[31:28],instr_index_shifted[27:0]};
-    SignExtender        M05(.in(instruction[15:0]),.out(immediate_offset));
-    LeftShifter         M06(.in(immediate_offset),.out(branch_offset_shifted));
+    SignExtender        M05(.in(instruction[15:0]),.out(immediate));
+    LeftShifter         M06(.in(immediate),.out(branch_offset_shifted));
     Adder32bit          M07(.a(pc_plus_4),.b(branch_offset_shifted),.c_in(1'b0),.sum(pc_branch_calc));
     assign branch_src_sel_res = branch_src_sel & alu_zero;
     Mux2to1             M08(.a(pc_plus_4),.b(pc_branch_calc),.sel(branch_src_sel_res),.out(pc_branch_res));
@@ -57,9 +61,9 @@ module SingleCycleProcessor(
                             .write_reg(write_reg),.write_data(rd_data),.reg_write(reg_write),
                             .clk(clk));
                             
-    Mux2to1             M12();
-    ALUControl          M13();
-    ALU                 M14();
+    Mux2to1             M12(.a(rt_data),.b(immediate),.sel(alu_src_sel),.out(alu_input_2));
+    ALUControl          M13(.alu_op(),.shamt(),.func_code(),.alu_ctl(alu_ctl));
+    ALU                 M14(.a(rs_data),.b(alu_input_2),.result(alu_result),.zero(alu_zero),.ctl(alu_ctl));
     
     DataMemory          M15();
     Mux2to1             M16();
