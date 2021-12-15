@@ -2,7 +2,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer: Leo Battalora
 // 
-// Module Name: Mux2to1
+// Module Name: ProgramCounter
 // Project Name: SingleCycleProcessor
 // Description: 
 // 
@@ -10,14 +10,18 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module Mux2to1 #(parameter WIDTH = 32) (
-    input [WIDTH-1:0] a,
-    input [WIDTH-1:0] b,
-    input sel,
-    output [WIDTH-1:0] out
+
+module ProgramCounter(
+    input [31:0] pc_next,
+    output reg [31:0] pc_current,
+    input clk
     );
     
-    // when sel == 0, out = a
-    // when sel == 1, out = b
-    assign out = sel ? b : a;
+    initial begin
+        pc_current <= 32'h00000000;
+    end
+    
+    always @(posedge clk) begin
+        pc_current <= pc_next;
+    end
 endmodule
