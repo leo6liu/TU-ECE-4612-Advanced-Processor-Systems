@@ -21,7 +21,7 @@ module InstructionMemory #(parameter WIDTH = 32, DEPTH = 1024) (
     
     // initialize memory from file
     initial begin : initialize_memory
-        $readmemh("program.txt", memory);
+        $readmemb("program.txt", memory);
     end
     
     // output the instruction corresponding to the requested address

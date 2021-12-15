@@ -29,6 +29,7 @@ module DataMemory #(parameter WIDTH = 32, DEPTH = 1024) (
         for (i = 0; i < DEPTH; i = i+1) begin
             memory[i] = 32'b0;
         end
+        $readmemb("data.txt", memory);
     end
     
     // on each clock cycle, write write_data to address if mem_write is high
