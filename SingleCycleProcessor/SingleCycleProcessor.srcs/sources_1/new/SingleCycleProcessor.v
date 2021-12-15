@@ -44,6 +44,11 @@ module SingleCycleProcessor(
     wire branch_src_sel_res; // output from AND of branch_src_sel and alu_zero
     wire alu_zero; // output from ALU indicating a 0 result
     
+    initial begin
+        //pc <= 32'h00000000;
+        //pc_next <= 32'h00000000;
+    end
+    
     Control             M00(.opcode(instruction[31:26]),.alu_op(alu_op),.reg_dst_sel(reg_dst_sel),
                             .jump_src_sel(jump_src_sel),.branch_src_sel(branch_src_sel),
                             .alu_src_sel(alu_src_sel),.mem_to_reg_sel(mem_to_reg_sel),

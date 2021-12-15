@@ -20,7 +20,26 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SingleCycleProcessor_tb(
+module SingleCycleProcessor_tb();
 
-    );
+    reg clk;
+    
+    SingleCycleProcessor M01(.clk(clk));
+    
+    initial begin
+        clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        clk = 1; #10 clk = 0; #10
+        $finish;
+    end
 endmodule

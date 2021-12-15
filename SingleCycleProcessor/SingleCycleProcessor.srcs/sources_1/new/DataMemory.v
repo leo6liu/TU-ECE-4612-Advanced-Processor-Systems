@@ -23,7 +23,7 @@ module DataMemory #(parameter WIDTH = 32, DEPTH = 1024) (
     // memory with 1024 locations [0:1023] (depth) each of 32 bits [31:0] (width).
     reg [WIDTH-1:0] memory [0:DEPTH-1];
     
-    // initialize memory to all 0's
+    // initialize memory to all 0's, then read data.txt
     initial begin : initialize_memory
         integer i;
         for (i = 0; i < DEPTH; i = i+1) begin

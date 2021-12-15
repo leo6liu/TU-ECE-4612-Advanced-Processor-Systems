@@ -1,3 +1,4 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-$finish called at time : 60 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" Line 27
+$finish called at time : 250 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SingleCycleProcessor_tb.v" Line 43
+$finish called at time : 250 ns : File "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/SingleCycleProcessor_tb.v" Line 43
