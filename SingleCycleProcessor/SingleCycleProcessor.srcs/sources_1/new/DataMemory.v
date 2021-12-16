@@ -39,18 +39,8 @@ module DataMemory #(parameter WIDTH = 32, DEPTH = 1024) (
         end
     end
     
-    // on each clock cycle, read data from address to read_data if mem_read is high, else set read_data to 0
+    // on each clock cycle, read data from address to read_data
     always @(address) begin
         read_data <= memory[address];
     end
-    /*
-    // on each clock cycle, read data from address to read_data if mem_read is high, else set read_data to 0
-    always @(address or mem_read) begin
-        if (mem_read == 1) begin
-            read_data <= memory[address];
-        end else begin
-            read_data <= 32'hffffffff;
-        end
-    end
-    */
 endmodule

@@ -24,7 +24,7 @@ module ALU_tb();
     initial begin
         ctl = 4'b0010; a = 3; b = 2; #10 // 5
         ctl = 4'b0011; a = 5; b = 5; #10 // 0
-        ctl = 4'b0100; a = -3; b = 7; #10 // 27
+        ctl = 4'b0100; a = -3; b = 7; #10 // -27
         $finish;
     end
 endmodule

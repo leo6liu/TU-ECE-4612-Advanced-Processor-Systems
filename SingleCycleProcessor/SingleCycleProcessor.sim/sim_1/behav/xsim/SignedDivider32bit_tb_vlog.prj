@@ -15,6 +15,13 @@ verilog xil_defaultlib  \
 "../../../../SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" \
 "../../../../SingleCycleProcessor.srcs/sources_1/new/Divider32bit.v" \
 "../../../../SingleCycleProcessor.srcs/sources_1/new/SignedDivider32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/SingleCycleProcessor.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Registers.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/ProgramCounter.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Control.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/ALUControl.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/ALU.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/SignedSubtractor32bit.v" \
 "../../../../SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" \
 "../../../../SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" \
 "../../../../SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" \
@@ -30,6 +37,10 @@ verilog xil_defaultlib  \
 "../../../../SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" \
 "../../../../SingleCycleProcessor.srcs/sim_1/new/Divider32bit_tb.v" \
 "../../../../SingleCycleProcessor.srcs/sim_1/new/SignedDivider32bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/SingleCycleProcessor_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/ALUControl_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/ALU_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Control_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

@@ -45,6 +45,7 @@ module SignedDivider32bit(
         quotient = 0;
         remainder = {32'b0,a_unsigned};
         
+        // unsigned division logic
         for (i = 0; i < 33; i = i + 1) begin
             // subtrtact divisor from remainder
             remainder = remainder - divisor;

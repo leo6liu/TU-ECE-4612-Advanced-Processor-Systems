@@ -44,7 +44,5 @@ module ALUControl(
                 endcase
             end
         endcase
-    
-        
     end
 endmodule

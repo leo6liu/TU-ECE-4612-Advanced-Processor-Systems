@@ -45,6 +45,7 @@ module SignedMultiplier32bit(
         multiplier = b_unsigned;
         product = 0;
         
+        // unsigned multiplication logic
         for (i = 0; i < 32; i = i + 1) begin
             // add multiplicand to product if multiplier[i] == 1
             if (multiplier[0] == 1'b1) begin
