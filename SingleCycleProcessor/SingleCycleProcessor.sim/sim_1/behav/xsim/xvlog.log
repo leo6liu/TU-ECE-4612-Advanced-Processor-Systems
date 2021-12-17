@@ -42,6 +42,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-
 INFO: [VRFC 10-311] analyzing module ALU
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/SignedSubtractor32bit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SignedSubtractor32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sources_1/new/FloatAdder32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FloatAdder32bit
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Mux2to1_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" into library xil_defaultlib
@@ -86,3 +88,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-
 INFO: [VRFC 10-311] analyzing module ProgramCounter_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/Registers_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Registers_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/rktli/Documents/GitHub/TU-ECE-4612-Advanced-Processor-Systems/SingleCycleProcessor/SingleCycleProcessor.srcs/sim_1/new/FloatAdder32bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FloatAdder32bit_tb

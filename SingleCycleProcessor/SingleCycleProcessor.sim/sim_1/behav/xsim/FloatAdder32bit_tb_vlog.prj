@@ -1,0 +1,53 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/SignExtender.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Adder16bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Adder4bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/FullAdder.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/HalfAdder.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Adder32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Mux2to1.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/LeftShifter.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/SignedAdder32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/DataMemory.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/InstructionMemory.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/SignedMultiplier32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Multiplier32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Divider32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/SignedDivider32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/SingleCycleProcessor.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Registers.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/ProgramCounter.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/Control.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/ALUControl.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/ALU.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/SignedSubtractor32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sources_1/new/FloatAdder32bit.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Mux2to1_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Adder16bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Adder32bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Adder4bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/FullAdder_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/HalfAdder_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/SignExtender_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/LeftShifter_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/SignedAdder32bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/DataMemory_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/InstructionMemory_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Multiplier32bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/SignedMultiplier32bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Divider32bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/SignedDivider32bit_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/SingleCycleProcessor_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/ALUControl_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/ALU_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Control_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/ProgramCounter_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/Registers_tb.v" \
+"../../../../SingleCycleProcessor.srcs/sim_1/new/FloatAdder32bit_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
